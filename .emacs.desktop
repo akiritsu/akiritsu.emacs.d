@@ -1,0 +1,71 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Nov 14 23:57:00 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq comint-input-ring nil)
+(setq compile-history nil)
+(setq desktop-missing-file-warning nil)
+(setq dired-regexp-history nil)
+(setq extended-command-history '("kill-some-buffers" "slime"))
+(setq face-name-history nil)
+(setq file-name-history '("~/.emacs.d/.gitignore" "~/Documents/akitsukikiritsugu.github.io/.gitignore" "~/Documents/akitsukikiritsugu.github.io/.editorconfig" "~/Documents/akitsukikiritsugu.github.io/.gitignore" "/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/Relations-Text.tpd" "/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/Findkeywords.sh" "~/workspaces/lisp-practise/c9/simple-test.lisp" "/etc/hosts" "/home/akitsuki/workspaces/lisp-practise/c9/simple-test.lisp" "~/kuali/current-work-stream/AcademicCalendarView.xml" "~/.bash_history" "~/kuali/current-work-stream/ResultValueInfoAdminLookupView.xml" "~/.emacs.d/lisp/init-slime.el" "~/Documents/Kuali‘Ïî‘Ä¿‘¼Æ‘»®‘½ø‘¶È‘±í.xls" "~/.ido.last" "~/.emacs.d/site-lisp/README" "~/kuali/current-work-stream/CourseMaintenanceView.xml" "~/Documents/Kuali‘Ïî‘Ä¿‘¼Æ‘»®‘½ø‘¶È‘±í.xls" "~/kuali/current-work-stream/CourseMaintenanceView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/kuali/current-work-stream/AcademicCalendarView.xml" "~/kuali/current-work-stream/AcademicTermLookupView.xml" "~/kuali/current-work-stream/EnrollmentHomeView.xml" "~/kuali/current-work-stream/CurriculumHomeView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/kuali/current-work-stream/AcademicCalendarView.xml" "~/kuali/current-work-stream/AcademicTermLookupView.xml" "~/kuali/current-work-stream/EnrollmentHomeView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/kuali/current-work-stream/AcademicCalendarView.xml" "~/kuali/current-work-stream/AcademicTermLookupView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/kuali/current-work-stream/AcademicCalendarView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment2/ks-final-milestone (copy)/build.log" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el" "~/.bash_history" "~/workspaces/ideaProjects/enrollment/aggregate/Notice.txt" "~/Desktop/‘Ï£‘À°‘×Ö‘Ä¸‘±í" "~/opt/tomcat7-8082/bin/catalina.sh" "~/opt/opengrok-0.12.1/bin/OpenGrok" "~/.local/share/Trash/files/aggregate/Relations-Find a Course Proposal.tpd" "~/workspaces/lisp-practise/c9/simple-test.lisp" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/src/main/resources/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/workspaces/ideaProjects/enrollment/aggregate/ks-lum/ks-cm-krad/target/classes/org/kuali/student/cm/main/CurriculumHomeView.xml" "~/.emacs.d/site-lisp/README" "~/backup/.emacs" "~/.emacs.d/lisp/init-slime.el"))
+(setq grep-find-history nil)
+(setq grep-history nil)
+(setq ido-buffer-history '("*inferior-lisp*" "*slime-events*" "*Messages*" "*scratch*" "*ansi-term*" "Relations-Text.tpd" "Findkeywords.sh" "*ansi-term*" "simple-test.lisp" "*scratch*" "*Messages*" "simple-test.lisp" "*Compile-Log*" "hosts" "*ansi-term*" " *undo-tree*" "AcademicCalendarView.xml" ".bash_history" "ResultValueInfoAdminLookupView.xml" "init-slime.el" "Kuali‘Ïî‘Ä¿‘¼Æ‘»®‘½ø‘¶È‘±í.xls" nil ".ido.last" " *Echo Area 0*" "README" "CourseMaintenanceView.xml" "Kuali‘Ïî‘Ä¿‘¼Æ‘»®‘½ø‘¶È‘±í.xls" "CourseMaintenanceView.xml" "*Messages*" "*scratch*" "*Messages*" "*Compile-Log*" "*scratch*" "README" ".emacs" "init-slime.el" ".bash_history" "Notice.txt" "catalina.sh" "OpenGrok" "Relations-Find a Course Proposal.tpd" "simple-test.lisp" "CurriculumHomeView.xml" "CurriculumHomeView.xml —£À classes" "AcademicCalendarView.xml" "AcademicTermLookupView.xml" "EnrollmentHomeView.xml" "CurriculumHomeView.xml —£À current-work-stream" "CourseMaintenanceView.xml" " *undo-tree*" "krad-base-servlet.xml" "do-primes.lisp" "EnrollmentHomeView.xml" " *undo-tree*" "simple-test.lisp" "*inferior-lisp*<5>" "*slime-repl clisp<2>*" "*ansi-term*<2>" "macro-utilities.asd" "macro-utilities.lisp" "*slime-macroexpansion*" "*slime-repl clisp*" "*ansi-term*<2>" "do-primes.lisp" "*slime-repl clisp*" "do-primes.lisp" "*ansi-term*<2>" "*slime-events*" "*slime-repl clisp*" "*slime-events*" "*slime-repl clisp*" "*ansi-term*<2>" "do-primes.lisp" "IndexPageServlet.java" "*ansi-term*" "IndexPageServlet.java" "2014-11-10-ConfigureEmacs.md" "init.el" " *undo-tree*"))
+(setq ido-last-directory-list '(("/home/akitsuki/workspaces/lisp-practise/answers/" . "Chapter08/") ("/home/akitsuki/workspaces/" . "lisp-practise/") ("/home/akitsuki/workspaces/lisp-practise/" . "c9/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/student/common/ui/server/" . "start/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/student/common/ui/" . "server/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/student/common/" . "ui/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/student/" . "common/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/" . "student/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/" . "kuali/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/" . "org/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/" . "java/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/" . "main/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/" . "src/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/" . "ks-common-ui/") ("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/" . "ks-common/") ("/home/akitsuki/" . ".emacs.d/") ("/" . "etc/")))
+(setq ido-work-directory-list '("/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/" "/etc/" "/home/akitsuki/workspaces/lisp-practise/c9/" "/home/akitsuki/workspaces/lisp-practise/answers/Chapter08/" "/home/akitsuki/workspaces/lisp-practise/c8/" "/home/akitsuki/workspaces/ideaProjects/enrollment/aggregate/ks-core/ks-common/ks-common-ui/src/main/java/org/kuali/student/common/ui/server/start/" "/home/akitsuki/.emacs.d/" "/home/akitsuki/Documents/akitsukikiritsugu.github.io/_posts/"))
+(setq ido-work-file-list '("Relations-Text.tpd" "Findkeywords.sh" "hosts" "simple-test.lisp" "macro-utilities.lisp" "macro-utilities.asd" "do-primes.lisp" "IndexPageServlet.java" "init.el" "2014-11-10-ConfigureEmacs.md"))
+(setq magit-read-rev-history nil)
+(setq minibuffer-history '("/bin/bash"))
+(setq org-clock-history nil)
+(setq org-refile-history nil)
+(setq org-tags-history nil)
+(setq query-replace-history nil)
+(setq read-expression-history nil)
+(setq regexp-history nil)
+(setq regexp-search-ring nil)
+(setq register-alist '((48 . "next-prime ,start) (next-prime (1+ ,var))))\n       ((> ,var ,end))\n     ,@body))\n;;; Leading two more loophole:\n;;; 1. Error binding a variable named \"ending-value\" unluckily.\n;;; 2. var is evaled at a wrong time.Eval order must be same to referenced order by macro.\n\n;;; The forth impl,resolve loophole2\n\n;;; The fifth impl:\n;;; Using (gensym)\n(defmacro do-primes5 ((var start end) &body body)\n  (let ((ending-value-name (gensym)))\n    `(do ((,var (next-prime ,start) (next-prime (1+ ,var)))\n          (,ending-value-name ,end))\n         ((> ,var ,ending-value-name))\n       ,@body)))\n;;; Macro^2\n(defmacro with-gensyms ((&rest names) &body body)\n  `(let ,(loop for n in names collect `(,n (gensym)))\n     ,@body))\n\n;;; The sixth impl with with-gensyms\n")))
+(setq search-ring '("linktext" "bookmarkui" "bookmark" "headerText" "text" "ks-lum " "view" "Find a Course Pro" "response.set" "/"))
+(setq shell-command-history nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/akitsuki/.emacs.d/.gitignore"
+  ".gitignore"
+  'gitignore-mode
+  '(anzu-mode global-auto-revert-mode whitespace-cleanup-mode undo-tree-mode whole-line-or-region-mode hes-mode guide-key-mode auto-compile-on-load-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/akitsuki/Documents/akitsukikiritsugu.github.io/.editorconfig"
+  ".editorconfig"
+  'fundamental-mode
+  '(anzu-mode global-auto-revert-mode whitespace-cleanup-mode undo-tree-mode whole-line-or-region-mode hes-mode guide-key-mode auto-compile-on-load-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/akitsuki/Documents/akitsukikiritsugu.github.io/.gitignore"
+  ".gitignore"
+  'gitignore-mode
+  '(anzu-mode global-auto-revert-mode whitespace-cleanup-mode undo-tree-mode whole-line-or-region-mode hes-mode guide-key-mode auto-compile-on-load-mode)
+  254
+  '(254 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+

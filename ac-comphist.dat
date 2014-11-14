@@ -1,0 +1,10 @@
+((("/home/akitsuki/workspaces/lisp-practise/c8/do-primes" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("/home/akitsuki/jdk/jdk1.7" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("/home/akitsuki/jdk/jdk1" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("/etc/emacs/site-start" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("/home/akitsuki/" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 2])))

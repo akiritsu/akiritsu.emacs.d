@@ -1,0 +1,18 @@
+
+;; ----- smex-history -----
+(
+ kill-some-buffers
+ slime
+ term
+ cd
+ ri
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (slime . 3)
+ (term . 1)
+ (kill-some-buffers . 7)
+)
