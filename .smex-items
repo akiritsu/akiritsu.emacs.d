@@ -1,18 +1,21 @@
 
 ;; ----- smex-history -----
 (
+ ibus-mode
  kill-some-buffers
+ org-mode
+ org-cycle
  slime
  term
  cd
- ri
- 5x5
- arp
 )
 
 ;; ----- smex-data -----
 (
  (slime . 3)
  (term . 1)
- (kill-some-buffers . 7)
+ (kill-some-buffers . 11)
+ (org-mode . 3)
+ (org-cycle . 1)
+ (ibus-mode . 1)
 )
