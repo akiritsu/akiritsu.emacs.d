@@ -72,9 +72,9 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
-(require 'init-javascript)
-(require 'init-php)
+;(require 'init-erlang)
+;(require 'init-javascript)
+;(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-html)
@@ -83,13 +83,13 @@
 (require 'init-python-mode)
 (require 'init-haskell)
 (require 'init-ruby-mode)
-(require 'init-rails)
+;(require 'init-rails)
 (require 'init-sql)
 
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-clojure)
+;(require 'init-clojure)
 (when (>= emacs-major-version 24)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
@@ -153,18 +153,13 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;;My configuration
-
-;;set ibus-el
-(add-to-list 'load-path "~/.emacs.d/lisp/ibus-el-0.3.2")
-(require 'ibus)
-(add-hook 'after-init-hook 'ibus-mode-on)
-;; 激活Ctrl+\切换输入法  
-(global-set-key (kbd "\C-\\") 'ibus-toggle)  
-
+;;----------------------------------------------------------------------------
+;; My configuratons
+;;----------------------------------------------------------------------------
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-dark-laptop)
 
 (global-set-key (kbd "C-x t") 'ansi-term)
 (global-set-key (kbd "C-x j") 'slime)
+(require 'oicq)

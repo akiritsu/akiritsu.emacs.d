@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- ibus-mode
+ customize-group
+ byte-compile-file
+ oicq
+ magit-log
+ magit-pull
  kill-some-buffers
  org-mode
- org-cycle
- slime
- term
- cd
 )
 
 ;; ----- smex-data -----
@@ -18,4 +18,9 @@
  (org-mode . 3)
  (org-cycle . 1)
  (ibus-mode . 1)
+ (magit-pull . 1)
+ (magit-log . 1)
+ (oicq . 1)
+ (byte-compile-file . 1)
+ (customize-group . 1)
 )

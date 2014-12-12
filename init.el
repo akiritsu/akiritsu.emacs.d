@@ -72,9 +72,9 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-(require 'init-erlang)
-(require 'init-javascript)
-(require 'init-php)
+;(require 'init-erlang)
+;(require 'init-javascript)
+;(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-html)
@@ -83,13 +83,13 @@
 (require 'init-python-mode)
 (require 'init-haskell)
 (require 'init-ruby-mode)
-(require 'init-rails)
+;(require 'init-rails)
 (require 'init-sql)
 
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-clojure)
+;(require 'init-clojure)
 (when (>= emacs-major-version 24)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
@@ -153,11 +153,20 @@
 ;; no-byte-compile: t
 ;; End:
 
-;;;My configuration
+;;----------------------------------------------------------------------------
+;; My configuratons
+;;----------------------------------------------------------------------------
 
+
+;; Themes
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-dark-laptop)
+;; Templates
+(require 'template)
+(template-initialize)
 
+;; Shortcuts
 (global-set-key (kbd "C-x t") 'ansi-term)
 (global-set-key (kbd "C-x j") 'slime)
+(require 'oicq)
