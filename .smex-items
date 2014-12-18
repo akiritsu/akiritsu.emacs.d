@@ -37,5 +37,5 @@
  (slime-mode . 1)
  (lisp-mode . 2)
  (magit-status . 1)
- (doc-view-reconvert-doc . 2)
+ (doc-view-reconvert-doc . 5)
 )
