@@ -1,7 +1,7 @@
 
 ;; ----- smex-history -----
 (
- org-todo
+ my-fullscreen
  org-agenda
  scheme-mode
  org-mode
@@ -26,4 +26,5 @@
  (scheme-mode . 1)
  (org-agenda . 1)
  (org-todo . 1)
+ (my-fullscreen . 1)
 )
