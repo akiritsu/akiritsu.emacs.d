@@ -5,7 +5,7 @@
 (require-package 'lively)
 
 (setq-default initial-scratch-message
-              (concat ";; Do not think anymore, and just sit and ENJOY HACKING, " (or user-login-name "") "!\n\n"))
+              (concat ";; Do NOT think anymore,\n;; just sit down and\n;; ENJOY HACKING,\n;; " (or user-login-name "") "!\n\n"))
 
 
 
