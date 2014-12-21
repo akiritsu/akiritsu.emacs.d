@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- my-fullscreen
- org-agenda
- scheme-mode
- org-mode
- customize-group
- byte-compile-file
- oicq
+ kill-some-buffers
+ scroll-down
+ lisp-mode
+ slime-mode
+ scroll-up
+ doc-view-mode
+ github-browse-file
 )
 
 ;; ----- smex-data -----
 (
  (slime . 3)
  (term . 1)
- (kill-some-buffers . 11)
+ (kill-some-buffers . 12)
  (org-mode . 4)
  (org-cycle . 1)
  (ibus-mode . 1)
@@ -27,4 +27,13 @@
  (org-agenda . 1)
  (org-todo . 1)
  (my-fullscreen . 1)
+ (nxml-web-mode . 1)
+ (cider-grimoire-web . 1)
+ (github-browse-file . 1)
+ (doc-view-mode . 1)
+ (scroll-up . 2)
+ (scroll-down . 2)
+ (term-mode . 1)
+ (slime-mode . 1)
+ (lisp-mode . 1)
 )

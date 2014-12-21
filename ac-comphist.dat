@@ -1,5 +1,7 @@
-((("my-fullscreen" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 2])
+((("previous-line" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("my-fullscreen" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 3])
   ("/home/akitsuki/workspaces/lisp-practise/c8/do-primes" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("/home/akitsuki/jdk/jdk1.7" .
