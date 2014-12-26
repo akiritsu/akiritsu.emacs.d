@@ -170,14 +170,16 @@
 (global-set-key (kbd "C-x t") 'ansi-term)
 (global-set-key (kbd "C-x j") 'slime)
 (global-set-key (kbd "C-c C-f") 'my-fullscreen)
+(require 'oicq)
 
 ;; Full Screen
+;; Full screen
 (defun my-fullscreen ()
   (interactive)
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32
    '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
-
+ 
 ;; Maximize
 (defun my-maximized-horz ()
   (interactive)
@@ -198,3 +200,5 @@
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32
    '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
+
+;; Convert from fullscreen and muiltple types of windows is defualt bind to C-M-123456789 in keypad.

@@ -1,9 +1,9 @@
 
 ;; ----- smex-history -----
 (
+ lisp-mode
  kill-some-buffers
  scroll-down
- lisp-mode
  slime-mode
  scroll-up
  doc-view-mode
@@ -35,5 +35,5 @@
  (scroll-down . 2)
  (term-mode . 1)
  (slime-mode . 1)
- (lisp-mode . 1)
+ (lisp-mode . 2)
 )
