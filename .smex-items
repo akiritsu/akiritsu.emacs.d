@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ doc-view-reconvert-doc
+ magit-status
  lisp-mode
  kill-some-buffers
  scroll-down
  slime-mode
  scroll-up
- doc-view-mode
- github-browse-file
 )
 
 ;; ----- smex-data -----
@@ -36,4 +36,6 @@
  (term-mode . 1)
  (slime-mode . 1)
  (lisp-mode . 2)
+ (magit-status . 1)
+ (doc-view-reconvert-doc . 2)
 )
