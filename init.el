@@ -167,7 +167,7 @@
 (template-initialize)
 
 ;; Shortcuts
-(global-set-key (kbd "C-x t") 'ansi-term)
+(global-set-key (kbd "C-x t") 'shell)
 (global-set-key (kbd "C-x j") 'slime)
 (global-set-key (kbd "C-c C-f") 'my-fullscreen)
 (require 'oicq)
@@ -202,3 +202,5 @@
    '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
 
 ;; Convert from fullscreen and muiltple types of windows is defualt bind to C-M-123456789 in keypad.
+
+

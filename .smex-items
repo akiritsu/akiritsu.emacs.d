@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ shell
+ doc-view-set-slice-from-bounding-box
+ doc-view-menu
  doc-view-reconvert-doc
  magit-status
  lisp-mode
  kill-some-buffers
- scroll-down
- slime-mode
- scroll-up
 )
 
 ;; ----- smex-data -----
@@ -38,4 +38,7 @@
  (lisp-mode . 2)
  (magit-status . 1)
  (doc-view-reconvert-doc . 5)
+ (doc-view-menu . 1)
+ (doc-view-set-slice-from-bounding-box . 1)
+ (shell . 1)
 )
