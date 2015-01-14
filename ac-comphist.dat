@@ -1,4 +1,20 @@
-((("previous-line" .
+((("synonym-stream" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("undefined-function" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("destructuring-bind" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("macroexpand-1" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  (":com.akiritsu.utilities" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("alien-sap" .
+   [0 0 0 0 1 0 0 0 0])
+  ("/home/akitsuki/github-repos/lisp-practise/practical-common-lisp/c24/c24a" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("macroexpand" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("previous-line" .
    [0 0 0 0 1 0 0 0 0 0 0 0 0])
   ("my-fullscreen" .
    [0 0 0 0 0 0 0 0 0 0 0 0 3])
@@ -15,4 +31,6 @@
   ("print-object" .
    [0 0 0 0 0 0 0 0 0 0 0 1])
   ("print-unreadable-object" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])))
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("com.akiritsu.utilities:" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))

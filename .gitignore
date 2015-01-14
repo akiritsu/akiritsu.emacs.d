@@ -1,7 +1,7 @@
 /url/cache
 /.emacs.desktop
 /auto-save-list
-session.
+session.*
 .session
 /custom.el
 *.elc

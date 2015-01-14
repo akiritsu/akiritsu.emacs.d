@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ kill-some-buffers
  shell
- doc-view-set-slice-from-bounding-box
- doc-view-menu
- doc-view-reconvert-doc
+ ansi-term
  magit-status
  lisp-mode
- kill-some-buffers
+ org-mode
+ slime
 )
 
 ;; ----- smex-data -----
 (
  (slime . 3)
  (term . 1)
- (kill-some-buffers . 12)
+ (kill-some-buffers . 13)
  (org-mode . 4)
  (org-cycle . 1)
  (ibus-mode . 1)
@@ -40,5 +40,6 @@
  (doc-view-reconvert-doc . 5)
  (doc-view-menu . 1)
  (doc-view-set-slice-from-bounding-box . 1)
- (shell . 1)
+ (shell . 2)
+ (ansi-term . 1)
 )
