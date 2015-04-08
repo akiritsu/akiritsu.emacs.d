@@ -14,7 +14,7 @@
 (
  (slime . 3)
  (term . 1)
- (kill-some-buffers . 13)
+ (kill-some-buffers . 17)
  (org-mode . 4)
  (org-cycle . 1)
  (ibus-mode . 1)
