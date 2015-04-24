@@ -6,7 +6,7 @@
 
 (setq-default initial-scratch-message
                                         ; (concat ";; Do NOT think anymore,\n;; just sit down and\n;; ENJOY HACKING,\n;; " (or user-login-name "") "!\n\n")
-              (concat ";; They will see,\n;;       we’ll fight until eternity.\n;; Come with me,\n;;       we'll stand and fight together.\n;; Through our strength,\n;;       we’ll make a better day.\n;; Tomorrow\n;;       we shall never surrender...\n ")
+              (concat ";; They will see,\n;;       we'll fight until eternity.\n;; Come with me,\n;;       we'll stand and fight together.\n;; Through our strength,\n;;       we'll make a better day.\n;; Tomorrow we\n;;       shall never surrender...\n ")
               )
 
 
