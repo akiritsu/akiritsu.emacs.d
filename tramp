@@ -1,6 +1,8 @@
-;; -*- emacs-lisp -*- <14/11/14 15:16:52 /home/akitsuki/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/03/06 00:39:18 /home/akitsuki/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
 ((["scp" nil "sudo" nil nil]
+  nil)
+ (["sudo" "root" "akitsuki-X811" nil nil]
   nil))

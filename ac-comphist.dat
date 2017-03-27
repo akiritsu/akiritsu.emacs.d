@@ -1,4 +1,8 @@
-((("call-next-method" .
+((("defparameter" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("documentation" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("call-next-method" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("*in-progress-objects" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4])
@@ -45,4 +49,24 @@
   ("print-unreadable-object" .
    [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
   ("com.akiritsu.utilities:" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("thecurrenttimeforgit" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("expt" .
+   [0 0 1 0])
+  ("__doc__" .
+   [0 0 1 0 0 0 0])
+  ("def" .
+   [0 0 1])
+  ("square" .
+   [0 0 0 1 0 0])
+  ("functionp" .
+   [1 0 0 0 1 0 0 0 0])
+  ("map" .
+   [1 0 0])
+  ("apply" .
+   [0 0 1 0 0])
+  ("funcall" .
+   [0 0 0 0 0 0 1])
+  ("numberp" .
+   [0 0 0 0 0 0 1])))

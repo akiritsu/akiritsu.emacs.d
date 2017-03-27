@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
+ run-scheme
  kill-some-buffers
- shell
- common-lisp-mode
- lisp-mode
- org-mode
- ansi-term
- magit-status
+ text-mode
+ mmm-clear-history
+ print-buffer
+ lpr-customize
+ ps-print-customize
 )
 
 ;; ----- smex-data -----
 (
  (slime . 3)
  (term . 1)
- (kill-some-buffers . 19)
- (org-mode . 5)
+ (kill-some-buffers . 24)
+ (org-mode . 7)
  (org-cycle . 1)
  (ibus-mode . 1)
  (magit-pull . 1)
@@ -23,9 +23,9 @@
  (oicq . 1)
  (byte-compile-file . 1)
  (customize-group . 1)
- (scheme-mode . 1)
+ (scheme-mode . 2)
  (org-agenda . 1)
- (org-todo . 1)
+ (org-todo . 2)
  (my-fullscreen . 1)
  (nxml-web-mode . 1)
  (cider-grimoire-web . 1)
@@ -35,12 +35,33 @@
  (scroll-down . 2)
  (term-mode . 1)
  (slime-mode . 1)
- (lisp-mode . 3)
+ (lisp-mode . 4)
  (magit-status . 1)
  (doc-view-reconvert-doc . 5)
  (doc-view-menu . 1)
  (doc-view-set-slice-from-bounding-box . 1)
- (shell . 3)
- (ansi-term . 1)
+ (shell . 4)
+ (ansi-term . 2)
  (common-lisp-mode . 1)
+ (linum-mode . 2)
+ (color-theme-vim-colors . 1)
+ (color-theme-dark-laptop . 3)
+ (color-theme-dark-gnus . 1)
+ (load-library . 1)
+ (w3m-haddock-find-tag . 1)
+ (eww . 11)
+ (gnus . 2)
+ (replace-string . 2)
+ (eshell . 2)
+ (run-scheme . 3)
+ (count-words . 63)
+ (ac-complete-dictionary . 1)
+ (text-mode . 3)
+ (print-buffer . 26)
+ (ps-print-buffer . 1)
+ (desktop-change-dir . 1)
+ (lpr-customize . 9)
+ (lpr-buffer . 2)
+ (ps-print-customize . 1)
+ (mmm-clear-history . 1)
 )
