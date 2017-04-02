@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ color-theme-dark-laptop
  run-scheme
+ replace-string
+ windmove-default-keybindings
  kill-some-buffers
  text-mode
  mmm-clear-history
- print-buffer
- lpr-customize
- ps-print-customize
 )
 
 ;; ----- smex-data -----
@@ -45,15 +45,15 @@
  (common-lisp-mode . 1)
  (linum-mode . 2)
  (color-theme-vim-colors . 1)
- (color-theme-dark-laptop . 3)
+ (color-theme-dark-laptop . 4)
  (color-theme-dark-gnus . 1)
  (load-library . 1)
  (w3m-haddock-find-tag . 1)
  (eww . 11)
  (gnus . 2)
- (replace-string . 2)
+ (replace-string . 4)
  (eshell . 2)
- (run-scheme . 3)
+ (run-scheme . 4)
  (count-words . 63)
  (ac-complete-dictionary . 1)
  (text-mode . 3)
@@ -64,4 +64,5 @@
  (lpr-buffer . 2)
  (ps-print-customize . 1)
  (mmm-clear-history . 1)
+ (windmove-default-keybindings . 1)
 )
