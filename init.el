@@ -1,7 +1,9 @@
-
+;;; init.el --- Summary
+;;; Commentary:
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
+;;; Code:
 (let ((minver "23.3"))
   (when (version<= emacs-version "23.1")
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -146,9 +148,6 @@
           (lambda ()
             (message "init completed in %.2fms"
                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
-
-
-(provide 'init)
 
 ;; Local Variables:
 ;; coding: utf-8
