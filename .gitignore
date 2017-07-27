@@ -36,3 +36,7 @@ site-lisp/package/
 /eshell
 .emacs.desktop
 history
+.smex-items
+ac-comphist.dat
+tramp
+tutorial/*

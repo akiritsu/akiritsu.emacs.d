@@ -86,7 +86,9 @@
 (require 'init-rails)
 (require 'init-sql)
 
-(require 'init-paredit)
+;; Unknown things prevent loading init.el
+;; (require 'init-paredit)
+
 (require 'init-lisp)
 (require 'init-slime)
 (require 'init-clojure)
@@ -169,39 +171,8 @@
 ;; Shortcuts
 (global-set-key (kbd "C-x t") 'shell)
 (global-set-key (kbd "C-x j") 'slime)
-(global-set-key (kbd "C-c C-f") 'my-fullscreen)
-
-;; Full Screen
-(defun my-fullscreen ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
-
-;; Maximize
-(defun my-maximized-horz ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
-(defun my-maximized-vert ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-(defun my-maximized ()
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-  (interactive)
-  (x-send-client-message
-   nil 0 nil "_NET_WM_STATE" 32
-   '(1 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
-
-
-;; Convert from fullscreen and muiltple types of windows is defualt bind to C-M-123456789 in keypad.
-
+;; hs-minor-mode
+(global-set-key (kbd "C-,") 'hs-troggle-hiding)
 
 ;; Configure scheme
 
