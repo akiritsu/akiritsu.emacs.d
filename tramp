@@ -1,8 +1,28 @@
-;; -*- emacs-lisp -*- <17/03/06 00:39:18 /home/akitsuki/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/04/26 00:17:59 /home/akitsuki/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
-((["scp" nil "sudo" nil nil]
-  nil)
- (["sudo" "root" "akitsuki-X811" nil nil]
+((["sudo" "root" "akitsuki-X811" nil nil]
+  ("locale" "LC_ALL=en_US.utf8")
+  ("uname" "Linux 4.4.0-72-generic")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("stat" "\\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-string" "root")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("~root" "/root")
+  ("ls" "/bin/ls --color=never")
+  ("ls-dired" t)
+  ("gid-integer" 0)
+  ("readlink" "\\readlink")
+  ("uid-integer" 0)
+  ("git" "\\git")
+  ("gvfs-monitor-dir" "/usr/bin/gvfs-monitor-dir"))
+ (["scp" nil "sudo" nil nil]
   nil))

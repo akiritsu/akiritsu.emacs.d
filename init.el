@@ -72,9 +72,9 @@
 (require 'init-textile)
 (require 'init-markdown)
 (require 'init-csv)
-;(require 'init-erlang)
-;(require 'init-javascript)
-;(require 'init-php)
+(require 'init-erlang)
+(require 'init-javascript)
+(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
 (require 'init-html)
@@ -83,13 +83,13 @@
 (require 'init-python-mode)
 (require 'init-haskell)
 (require 'init-ruby-mode)
-;(require 'init-rails)
+(require 'init-rails)
 (require 'init-sql)
 
-;(require 'init-paredit)
+(require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-;(require 'init-clojure)
+(require 'init-clojure)
 (when (>= emacs-major-version 24)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
@@ -170,16 +170,14 @@
 (global-set-key (kbd "C-x t") 'shell)
 (global-set-key (kbd "C-x j") 'slime)
 (global-set-key (kbd "C-c C-f") 'my-fullscreen)
-(require 'oicq)
 
 ;; Full Screen
-;; Full screen
 (defun my-fullscreen ()
   (interactive)
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32
    '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
- 
+
 ;; Maximize
 (defun my-maximized-horz ()
   (interactive)
@@ -208,7 +206,7 @@
 ;; Configure scheme
 
 (require 'cmuscheme)
-(setq scheme-program-name "racket")
+(setq scheme-program-name "scheme")
 ;; bypass the interactive question and start the default interpreter
 (defun scheme-proc ()
   "Return the current Scheme process, starting one if necessary."
@@ -260,5 +258,7 @@
 (setq lpr-add-switches '())
 ;; (setq lpr-switches "-d\ HL1210W")
 
+
 (provide 'init)
 ;;; init.el ends here
+
