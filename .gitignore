@@ -40,3 +40,4 @@ history
 ac-comphist.dat
 tramp
 tutorial/*
+.mc-lists.el
