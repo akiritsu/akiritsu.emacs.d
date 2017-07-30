@@ -55,3 +55,4 @@ ac-comphist.dat
 tramp
 tutorial/*
 .mc-lists.el
+.dir-loacal.el
