@@ -1,27 +1,41 @@
-;;; init.el --- Summary
-;;; Commentary:
+
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
-;;; Code:
-(let ((minver "23.3"))
-  (when (version<= emacs-version "23.1")
+(let ((minver "24.1"))
+  (when (version< emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
-(when (version<= emacs-version "24")
+(when (version< emacs-version "24.4")
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/function-reinforce" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/general-utils" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/language-support" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "lisp/programming-assist" user-emacs-directory))
+
+
 (require 'init-benchmarking) ;; Measure startup time
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
 (defconst *is-a-mac* (eq system-type 'darwin))
 
 ;;----------------------------------------------------------------------------
+;; Temporarily reduce garbage collection during startup
+;;----------------------------------------------------------------------------
+(defconst sanityinc/initial-gc-cons-threshold gc-cons-threshold
+  "Initial value of `gc-cons-threshold' at start-up time.")
+(setq gc-cons-threshold (* 128 1024 1024))
+(add-hook 'after-init-hook
+          (lambda () (setq gc-cons-threshold sanityinc/initial-gc-cons-threshold)))
+
+;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
-(require 'init-compat)
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
+;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
@@ -38,14 +52,14 @@
 (require-package 'project-local-variables)
 (require-package 'diminish)
 (require-package 'scratch)
-(require-package 'mwe-log-commands)
+(require-package 'command-log-mode)
+(require-package 'dictionary)
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-;;(require 'init-themes)
+(require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
-(require 'init-proxies)
 (require 'init-dired)
 (require 'init-isearch)
 (require 'init-grep)
@@ -54,20 +68,25 @@
 (require 'init-flycheck)
 
 (require 'init-recentf)
-(require 'init-ido)
+(require 'init-smex)
+(require 'init-ivy)
 (require 'init-hippie-expand)
-(require 'init-auto-complete)
+(require 'init-company)
 (require 'init-windows)
 (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
 
 (require 'init-editing-utils)
+(require 'init-whitespace)
+(require 'init-fci)
 
 (require 'init-vc)
 (require 'init-darcs)
 (require 'init-git)
 (require 'init-github)
+
+(require 'init-projectile)
 
 (require 'init-compile)
 (require 'init-crontab)
@@ -82,19 +101,19 @@
 (require 'init-html)
 (require 'init-css)
 (require 'init-haml)
-(require 'init-python-mode)
-(require 'init-haskell)
-(require 'init-ruby-mode)
+(require 'init-python)
+(unless (version<= emacs-version "24.3")
+  (require 'init-haskell))
+(require 'init-elm)
+(require 'init-ruby)
 (require 'init-rails)
 (require 'init-sql)
 
-;; Unknown things prevent loading init.el
-;; (require 'init-paredit)
-
+(require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-clojure)
-(when (>= emacs-major-version 24)
+(unless (version<= emacs-version "24.2")
+  (require 'init-clojure)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
 
@@ -103,17 +122,27 @@
 
 (require 'init-misc)
 
+(require 'init-folding)
 (require 'init-dash)
 (require 'init-ledger)
+(require 'init-elisp)
+;;(require 'init-modeline) ;; Incompatible with the theme
+(require 'init-window-numbering)
+
+;;----------------------------------------------------------------------------
+;; Users may configure new key-bindings here
+;;----------------------------------------------------------------------------
+(require 'extra-shortcuts)
+
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
 (require-package 'lua-mode)
-(require-package 'htmlize)
-(require-package 'dsvn)
+;(require-package 'htmlize)
+;(require-package 'dsvn)
 (when *is-a-mac*
   (require-package 'osx-location))
-(require-package 'regex-tool)
+;(maybe-require-package 'regex-tool)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
@@ -126,7 +155,6 @@
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
 ;;----------------------------------------------------------------------------
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (when (file-exists-p custom-file)
   (load custom-file))
 
@@ -134,8 +162,6 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
-(when (file-exists-p (expand-file-name "init-local.el" user-emacs-directory))
-  (error "Please move init-local.el to ~/.emacs.d/lisp"))
 (require 'init-local nil t)
 
 
@@ -144,91 +170,14 @@
 ;;----------------------------------------------------------------------------
 (require 'init-locales)
 
-(add-hook 'after-init-hook
-          (lambda ()
-            (message "init completed in %.2fms"
-                     (sanityinc/time-subtract-millis after-init-time before-init-time))))
+
+;(when (maybe-require-package 'uptimes)
+;  (add-hook 'after-init-hook (lambda () (require 'uptimes))))
+
+
+(provide 'init)
 
 ;; Local Variables:
 ;; coding: utf-8
 ;; no-byte-compile: t
 ;; End:
-
-;;----------------------------------------------------------------------------
-;; My configuratons
-;;----------------------------------------------------------------------------
-
-
-;; Themes
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-dark-laptop)
-;; Templates
-(require 'template)
-(template-initialize)
-
-;; Shortcuts
-(global-set-key (kbd "C-x t") 'shell)
-(global-set-key (kbd "C-x j") 'slime)
-;; hs-minor-mode
-(global-set-key (kbd "C-,") 'hs-toggle-hiding)
-
-;; Configure scheme
-
-(require 'cmuscheme)
-(setq scheme-program-name "scheme")
-;; bypass the interactive question and start the default interpreter
-(defun scheme-proc ()
-  "Return the current Scheme process, starting one if necessary."
-  (unless (and scheme-buffer
-               (get-buffer scheme-buffer)
-               (comint-check-proc scheme-buffer))
-    (save-window-excursion
-      (run-scheme scheme-program-name)))
-  (or (scheme-get-process)
-      (error "No current process. See variable `scheme-buffer'")))
-(defun scheme-split-window ()
-  (cond
-   ((= 1 (count-windows))
-    (delete-other-windows)
-    (split-window-vertically (floor (* 0.68 (window-height))))
-    (other-window 1)
-    (switch-to-buffer "*scheme*")
-    (other-window 1))
-   ((not (find "*scheme*"
-               (mapcar (lambda (w) (buffer-name (window-buffer w)))
-                       (window-list))
-               :test 'equal))
-    (other-window 1)
-    (switch-to-buffer "*scheme*")
-    (other-window -1))))
-(defun scheme-send-last-sexp-split-window ()
-  (interactive)
-  (scheme-split-window)
-  (scheme-send-last-sexp))
-(defun scheme-send-definition-split-window ()
-  (interactive)
-  (scheme-split-window)
-  (scheme-send-definition))
-
-(add-hook 'scheme-mode-hook
-          (lambda ()
-            (paredit-mode 1)
-            (define-key scheme-mode-map (kbd "<f5>") 'scheme-send-last-sexp-split-window)
-            (define-key scheme-mode-map (kbd "<f6>") 'scheme-send-definition-split-window)))
-
-;;new paredit
-(autoload 'paredit-mode "paredit"
-  "Minor mode for pseudo-structurally editing Lisp code."
-  t)
-
-;; lpr driver are not suitable for Brother HL1210W. Change the lpr-command to xpp and explicit the printer name.
-(setq lpr-command "lp")
-;; (setq printer-name "HL1210W")
-(setq lpr-add-switches '())
-;; (setq lpr-switches "-d\ HL1210W")
-
-
-(provide 'init)
-;;; init.el ends here
-
