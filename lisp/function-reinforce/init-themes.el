@@ -669,11 +669,10 @@
 (yellow ((t (nil))))
 (zmacs-region ((t (nil)))))))
 
-
-                                        ;(color-theme-initialize)
-                                        ;(color-theme-the-matrix)
 ;; If you don't customize it, this is the theme you get.
-                                        ;(setq-default custom-enabled-themes '(sanityinc-tomorrow-day))
+(color-theme-initialize)
+(color-theme-the-matrix)
+;(setq-default custom-enabled-themes '(sanityinc-tomorrow-day))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()

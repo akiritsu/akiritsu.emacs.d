@@ -130,9 +130,10 @@
 (require 'init-window-numbering)
 
 ;;----------------------------------------------------------------------------
-;; Users may configure new key-bindings here
+;; Users may configure new key-bindings and minor configurations here
 ;;----------------------------------------------------------------------------
 (require 'extra-shortcuts)
+(require 'configuration)
 
 ;; Extra packages which don't require any configuration
 
