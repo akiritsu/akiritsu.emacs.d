@@ -10,6 +10,15 @@
 
 * Magical appearence
 
+## Supported Language
+
+* Ruby / Clojure / Python / Haskell / Erlang / Lisp
+
+* Js / Coffeescript / PHP / Html
+
+* CSS / LESS / SASS / SCSS
+
+* HAML / Markdown / Textile / ERB
 
 ## Emacs Cheat Sheet
 
@@ -91,7 +100,7 @@
     </td>
 </table>
 
-## Supported Language
+
 
 ## Plug-in List
 
