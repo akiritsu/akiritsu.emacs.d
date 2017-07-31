@@ -6,14 +6,7 @@
 (require-package 'lively)
 
 (setq-default initial-scratch-message
-  (concat ";; They will see,\n
-	   ;;       we'll fight until eternity.\n
-           ;; Come with me,\n
-           ;;       we'll stand and fight together.\n
-           ;; Through our strength,\n
-           ;;       we'll make a better day.\n
-           ;; Tomorrow we\n
-           ;;       shall never surrender...\n "))
+  (concat ";; They will see,\n;;       we'll fight until eternity.\n;; Come with me,\n;;       we'll stand and fight together.\n;; Through our strength,\n;;       we'll make a better day.\n;; Tomorrow we\n;;       shall never surrender...\n "))
 
 
 
