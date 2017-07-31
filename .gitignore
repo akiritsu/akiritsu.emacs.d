@@ -56,3 +56,4 @@ tramp
 tutorial/*
 .mc-lists.el
 .dir-loacal.el
+*.\#*

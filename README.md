@@ -12,10 +12,6 @@
 
 
 ## Emacs Cheat Sheet
-
-<table BORDER WIDTH="100%">
-  <tr>
-    <td valign=top>
 	 <table border>
 	   <tr>
 	     <th rowspan=2><font size=+1>Cursor<br>Motion</font></th>
@@ -88,8 +84,6 @@
 	     <td colspan=2><i>(no repeat count)</i></td>
 	   </tr>
 	 </table>
-    </td>
-
 ## Supported Language
 
 ## Plug-in List
