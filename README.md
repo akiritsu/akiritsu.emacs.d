@@ -2,7 +2,7 @@
 
 * Multi-language support, multi-platform
 
-* Handy splited window control (C-x o a~z; M-1~9)
+* Handy splited window control (C-x o a\~z; M-1\~9)
 
 * Friendly to new emacsers, customizable, productive
 
