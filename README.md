@@ -12,6 +12,10 @@
 
 
 ## Emacs Cheat Sheet
+
+<table>
+  <tr>
+    <td valign=top>
 	 <table border>
 	   <tr>
 	     <th rowspan=2><font size=+1>Cursor<br>Motion</font></th>
@@ -84,17 +88,10 @@
 	     <td colspan=2><i>(no repeat count)</i></td>
 	   </tr>
 	 </table>
+    </td>
+</table>
+
 ## Supported Language
 
 ## Plug-in List
 
-
-
-
-1.Quote some useless module to speed up launching, but still invalid on surface 3. (That is, no ssd.)
-
-2.Using a dark theme to decrease the irratating to eyes.
-
-3.New shortcuts.
-
-This configuration is a slight customization of Purcell's.
