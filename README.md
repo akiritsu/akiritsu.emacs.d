@@ -2,7 +2,7 @@
 
 * Multi-language support, multi-platform
 
-* Handy splited window control (C-x o a~z; M-1~9)
+* Handy splited window control (C-x o a\~z; M-1\~9)
 
 * Friendly to new emacsers, customizable, productive
 
@@ -98,6 +98,43 @@
 	   </tr>
 	 </table>
     </td>
+
+    <table>
+  <tr>
+    <th colspan="3">Scroll Motion</th>
+    <th colspan="2" rowspan="2">Other Scroll Method</th>
+  </tr>
+  <tr>
+    <td>Amount</td>
+    <td>Up</td>
+    <td>Down</td>
+  </tr>
+  <tr>
+    <td>Paragraph</td>
+    <td>M-{</td>
+    <td>M-}</td>
+    <td>Go to line</td>
+    <td>M-g g</td>
+  </tr>
+  <tr>
+    <td>Screen</td>
+    <td>M-v</td>
+    <td>C-v</td>
+    <td>Scroll other window down</td>
+    <td>C-M-v</td>
+  </tr>
+  <tr>
+    <td>Buffer</td>
+    <td>M-&lt;</td>
+    <td>M-&gt;</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+    <table id="">
+    </table>
+    <table id="">
+
 </table>
 
 
