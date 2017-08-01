@@ -57,3 +57,5 @@ tutorial/*
 .mc-lists.el
 .dir-loacal.el
 *.\#*
+
+/lisp/configuration.el

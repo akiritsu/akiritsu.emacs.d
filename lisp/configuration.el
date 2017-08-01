@@ -45,5 +45,8 @@
 ;; Windows numbering mode
 (window-numbering-mode 1)
 
+(setq shell-file-name "C://Program Files//cygwin64//bin//bash.exe")
+(setq explicit-shell-file-name "C://Program Files//cygwin64//bin//bash.exe")
+(setq default-directory "C://User//Kiritoki//Documents")
 
 (provide 'configuration)
