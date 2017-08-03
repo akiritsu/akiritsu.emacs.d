@@ -8,12 +8,12 @@
 
 (add-hook 'paredit-mode-hook 'maybe-map-paredit-newline)
 
-(after-load 'paredit
-  (diminish 'paredit-mode " Par")
+;(after-load 'paredit
+ ; (diminish 'paredit-mode " Par")
   ;; Suppress certain paredit keybindings to avoid clashes, including
   ;; my global binding of M-?
-  (dolist (binding '("C-<left>" "C-<right>" "C-M-<left>" "C-M-<right>" "M-s" "M-?"))
-    (define-key paredit-mode-map (read-kbd-macro binding) nil)))
+  ;(dolist (binding '"C-<left>" "C-<right>" "C-M-<left>" "C-M-<right>" "M-s" "M-?"))
+   ; (define-key paredit-mode-map (read-kbd-macro binding) nil)))
 
 
 ;; Compatibility with other modes
@@ -36,16 +36,17 @@
 (defun conditionally-enable-paredit-mode ()
   "Enable paredit during lisp-related minibuffer commands."
   (if (memq this-command paredit-minibuffer-commands)
-      (enable-paredit-mode)))
+      (enable-paredit-mode))
 
-;; ----------------------------------------------------------------------------
-;; Enable some handy paredit functions in all prog modes
-;; ----------------------------------------------------------------------------
+  ;; ----------------------------------------------------------------------------
+  ;; Enable some handy paredit functions in all prog modes
+  ;; ----------------------------------------------------------------------------
 
-(require-package 'paredit-everywhere)
-(after-load 'paredit-everywhere
-  (define-key paredit-everywhere-mode-map (kbd "M-s") nil))
-(add-hook 'prog-mode-hook 'paredit-everywhere-mode)
-(add-hook 'css-mode-hook 'paredit-everywhere-mode)
+  (require-package 'paredit-everywhere)
+  (after-load 'paredit-everywhere
+    (define-key paredit-everywhere-mode-map (kbd "M-s") nil))
+  (add-hook 'prog-mode-hook 'paredit-everywhere-mode)
+  (add-hook 'css-mode-hook 'paredit-everywhere-mode)
 
-(provide 'init-paredit)
+  (provide 'init-paredit)
+  )
