@@ -16,8 +16,6 @@
 
 (global-set-key (kbd "C-x \\") "λ")
 
-;; paredit (init-paredit.el) is conflicted with windows moving (windmove.el.gz). Rebinding shortcuts.
-
 (provide 'extra-shortcuts)
 
 ;;; extra-shortcuts.el ends here
