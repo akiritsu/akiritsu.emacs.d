@@ -70,6 +70,8 @@
   (add-to-list 'hippie-expand-try-functions-list 'try-complete-lisp-symbol t)
   (add-to-list 'hippie-expand-try-functions-list 'try-complete-lisp-symbol-partially t))
 
+
+
 (defun elisp-mode-hook-setup ()
   (unless (is-buffer-file-temp)
     (when (require 'eldoc nil t)

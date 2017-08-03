@@ -449,7 +449,7 @@
      (mmm-face ((t (nil))))
 
 ;;; Modeline settings
-     (mode-line ((t (:background "#150220" :foreground "#606060"))))
+     (mode-line ((t (:background "#150220" :foreground "#bbbbbb"))))
      (mode-line-inactive ((t (:background "#100515" :foreground "#444444"))))
      (modeline-buffer-id ((t (:background "#251836" :foreground "#307520"))))
      (modeline-mousable ((t (:background "grey" :foreground "black"))))

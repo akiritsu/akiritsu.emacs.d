@@ -27,7 +27,7 @@
 ;;; (foo (bar |baz quux) zot)
 ;;; (foo (bar |baz) quux zot)
 
-(global-set-key (kdb) "C-<left>" 'paredit-forward-barf-sexp)
+(global-set-key (kbd "C-<left>") 'paredit-forward-barf-sexp)
 
 ;;; C-M-<right>, etc. are Unity shortcuts and not avaliable in Emacs.
 ;;; Use "ESC C-<left>", "ESC C-<right>" instead.
