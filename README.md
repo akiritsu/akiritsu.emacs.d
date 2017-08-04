@@ -154,6 +154,7 @@ stack setup --install-ghc
 ```
 This GHC will not replace former versions.
 
+Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
 
 ## Plug-in List
 
