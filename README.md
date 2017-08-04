@@ -137,6 +137,22 @@
 
 </table>
 
+## Prerequisites
+
+1. If you are using Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
+
+```shell
+
+# Install Stack
+
+wget -qO- https://get.haskellstack.org/ | sh
+
+# Install Haskell
+
+stack setup --install-ghc
+
+```
+This GHC will not replace former versions.
 
 
 ## Plug-in List

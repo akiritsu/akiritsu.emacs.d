@@ -45,5 +45,9 @@
 ;; Windows numbering mode
 (window-numbering-mode 1)
 
+;; Debug mode
+(toggle-debug-on-quit)
+(toggle-debug-on-error)
+
 
 (provide 'configuration)
