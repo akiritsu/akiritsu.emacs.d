@@ -45,8 +45,23 @@
 ;; Windows numbering mode
 (window-numbering-mode 1)
 
+;; Windows spliting hotkey
+(defun three-windows-and-shell ()
+  "Split Emacs to -| and run shell on window-2."
+  (interactive)
+  (sanityinc/toggle-delete-other-windows)
+  (split-window-horizontally)
+  (select-window-1)
+  (split-window-vertically)
+  (projectile-run-shell)
+  (previous-buffer)
+  (select-window-2)
+  (select-named-buffer))
+
+
+
 ;; Debug mode
-(toggle-debug-on-quit)
+;;(toggle-debug-on-quit)
 (toggle-debug-on-error)
 
 
