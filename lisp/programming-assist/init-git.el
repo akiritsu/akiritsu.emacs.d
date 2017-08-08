@@ -23,13 +23,14 @@
 (after-load 'magit
   (fullframe magit-status magit-mode-quit-window))
 
-(when (maybe-require-package 'git-commit)
-  (add-hook 'git-commit-mode-hook 'goto-address-mode))
+;(when (maybe-require-package 'git-commit)
+;  (add-hook 'git-commit-mode-hook 'goto-address-mode))
+
 
 
 (when *is-a-mac*
   (after-load 'magit
-    (add-hook 'magit-mode-hook (lambda () (local-unset-key [(meta h)])))))
+    (add-h cook 'magit-mode-hook (lambda () (local-unset-key [(meta h)])))))
 
 
 

@@ -305,12 +305,12 @@ With arg N, insert N newlines."
 (hes-mode)
 
 
-(require-package 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x" "C-c" "C-x 4" "C-x 5" "C-c ;" "C-c ; f" "C-c ' f" "C-x n" "C-x C-r" "C-x r" "M-s" "C-h"))
-(add-hook 'after-init-hook
-          (lambda ()
-            (guide-key-mode 1)
-            (diminish 'guide-key-mode)))
+;(require-package 'guide-key)
+;(setq guide-key/guide-key-sequence '("C-x" "C-c" "C-x 4" "C-x 5" "C-c ;" "C-c ; f" "C-c ' f" "C-x n" "C-x C-r" "C-x r" "M-s" "C-h"))
+;(add-hook 'after-init-hook
+;          (lambda ()
+;            (guide-key-mode 1)
+;            (diminish 'guide-key-mode)))
 
 
 (provide 'init-editing-utils)
