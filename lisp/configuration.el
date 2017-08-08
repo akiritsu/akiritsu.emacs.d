@@ -65,6 +65,9 @@
   (select-window-3)
   (split-window-vertically))
 
+;;; TODO run-command-on-window
+
+
 
 
 ;; Debug mode
