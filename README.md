@@ -162,9 +162,7 @@ Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
 
 global-git-commit-mode may slows the reative of some operations in some low performance hard disks. You can block up this package in init-git.el.
 
-In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc.
-
-
+In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc..
 
 
     
