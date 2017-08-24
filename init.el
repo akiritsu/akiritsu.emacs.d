@@ -108,6 +108,9 @@
 (require 'init-ruby)
 (require 'init-rails)
 (require 'init-sql)
+(require 'init-proof-general)
+(require 'init-mozart-oz)
+
 
 (require 'init-paredit)
 (require 'init-lisp)
@@ -143,7 +146,7 @@
 ;(require-package 'dsvn)
 (when *is-a-mac*
   (require-package 'osx-location))
-;(maybe-require-package 'regex-tool)
+                                        ;(maybe-require-package 'regex-tool)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient

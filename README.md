@@ -22,6 +22,8 @@
 
 ## Emacs Cheat Sheet
 
+On Construction.
+
 <table>
   <tr>
     <td valign=top>
@@ -139,7 +141,7 @@
 
 ## Prerequisites
 
-1. If you are using Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
+1. When programming with Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
 
 ```shell
 
@@ -154,7 +156,20 @@ stack setup --install-ghc
 ```
 This GHC will not replace former versions.
 
-Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
+Warning : Lacking of Stack will cause Emacs fail to respond for seconds when editing .hs files.
+
+2. Proof-general for Coq (or others).
+
+
+Proof-general is already exists in "~/.emacs.d/site-lisp/". You should indicate the Coq path on Windows.
+
+3. Mozart-Oz. You can find Mozart-Oz on its <a href="https://mozart.github.io/mozart-v1/doc-1.4.0/install/index.html">Official Website</a>.
+
+After installation, you can weak up Mozart Oz by:
+
+```elisp
+M-x run-oz
+```
 
 ## Plug-in List
 
@@ -162,9 +177,7 @@ Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
 
 global-git-commit-mode may slows the reative of some operations in some low performance hard disks. You can block up this package in init-git.el.
 
-In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc..
-
-
+In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc.
     
 
 
