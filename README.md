@@ -167,10 +167,18 @@ Proof-general is already exists in "~/.emacs.d/site-lisp/". You should indicate 
 
 3. Mozart-Oz. You can find Mozart-Oz on its <a href="https://mozart.github.io/mozart-v1/doc-1.4.0/install/index.html">Official Website</a>.
 
+If you are installing an rpm package (only i386 version is avaliable), you need to convert it to amd64 version.
+
 After installation, you can weak up Mozart Oz by:
 
 ```elisp
 M-x run-oz
+```
+
+Or change current mode to oz-mode by:
+
+```elisp
+M-x oz-mode
 ```
 
 ## Plug-in List
