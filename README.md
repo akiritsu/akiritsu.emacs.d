@@ -115,8 +115,7 @@ On Construction.
   </tr>
   <tr>
     <td>Paragraph</td>
-    <td>M-{</td>
-    <td>M-}</td>
+    <td>M-{</td>    <td>M-}</td>
     <td>Go to line</td>
     <td>M-g g</td>
   </tr>
