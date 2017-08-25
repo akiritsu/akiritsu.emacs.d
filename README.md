@@ -12,7 +12,9 @@
 
 ## Supported Language
 
-* Ruby / Clojure / Python / Haskell / Erlang / Lisp
+* Ruby / Clojure / Python / Haskell 
+
+* Erlang / Lisp / Mozart Oz / Coq
 
 * Js / Coffeescript / PHP / Html
 

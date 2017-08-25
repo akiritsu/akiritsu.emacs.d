@@ -67,7 +67,8 @@
 
 ;;; TODO run-command-on-window
 
-
+;;; Docview mode: Continuous
+(setq doc-view-continuous t)
 
 
 ;; Debug mode
