@@ -12,7 +12,9 @@
 
 ## Supported Language
 
-* Ruby / Clojure / Python / Haskell / Erlang / Lisp
+* Ruby / Clojure / Python / Haskell 
+
+* Erlang / Lisp / Mozart Oz / Coq
 
 * Js / Coffeescript / PHP / Html
 
@@ -21,6 +23,8 @@
 * HAML / Markdown / Textile / ERB
 
 ## Emacs Cheat Sheet
+
+On Construction.
 
 <table>
   <tr>
@@ -111,8 +115,7 @@
   </tr>
   <tr>
     <td>Paragraph</td>
-    <td>M-{</td>
-    <td>M-}</td>
+    <td>M-{</td>    <td>M-}</td>
     <td>Go to line</td>
     <td>M-g g</td>
   </tr>
@@ -139,7 +142,7 @@
 
 ## Prerequisites
 
-1. If you are using Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
+1. When programming with Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
 
 ```shell
 
@@ -154,7 +157,28 @@ stack setup --install-ghc
 ```
 This GHC will not replace former versions.
 
-Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
+Warning : Lacking of Stack will cause Emacs fail to respond for seconds when editing .hs files.
+
+2. Proof-general for Coq (or others).
+
+
+Proof-general is already exists in "~/.emacs.d/site-lisp/". You should indicate the Coq path on Windows.
+
+3. Mozart-Oz. You can find Mozart-Oz on its <a href="https://mozart.github.io/mozart-v1/doc-1.4.0/install/index.html">Official Website</a>.
+
+If you are installing an rpm package (only i386 version is avaliable), you need to convert it to amd64 version.
+
+After installation, you can weak up Mozart Oz by:
+
+```elisp
+M-x run-oz
+```
+
+Or change current mode to oz-mode by:
+
+```elisp
+M-x oz-mode
+```
 
 ## Plug-in List
 
@@ -163,10 +187,6 @@ Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
 global-git-commit-mode may slows the reative of some operations in some low performance hard disks. You can block up this package in init-git.el.
 
 In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc.
-
-
-
-
     
 
 
