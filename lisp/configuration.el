@@ -45,8 +45,38 @@
 ;; Windows numbering mode
 (window-numbering-mode 1)
 
-(setq shell-file-name "C://Program Files//cygwin64//bin//bash.exe")
-(setq explicit-shell-file-name "C://Program Files//cygwin64//bin//bash.exe")
-(setq default-directory "C://User//Kiritoki//Documents")
+(setq shell-file-name "C://cygwin64//bin//bash.exe")
+(setq explicit-shell-file-name "C://cygwin64//bin//bash.exe")
+(setq default-directory "C:/User/akiri/Documents")
+
+;; Windows spliting hotkey
+(defun split-three-windows-and-shell ()
+  "Split Emacs to -| and run shell on window-2."
+  (interactive)
+  (sanityinc/toggle-delete-other-windows)
+  (split-window-horizontally)
+  (select-window-1)
+  (split-window-vertically)
+  (projectile-run-shell)
+  (previous-buffer))
+
+(defun split-four-windows ()
+  "Split Emacs to -|-."
+  (interactive)
+  (sanityinc/toggle-delete-other-windows)
+  (split-window-horizontally)
+  (split-window-vertically)
+  (select-window-3)
+  (split-window-vertically))
+
+;;; TODO run-command-on-window
+
+
+
+
+;; Debug mode
+;; (toggle-debug-on-quit)
+(toggle-debug-on-error)
+
 
 (provide 'configuration)

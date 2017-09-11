@@ -137,7 +137,38 @@
 
 </table>
 
+## Prerequisites
 
+1. If you are using Haskell, you need to install Haskell syntax checking tool Stack (and GHC 8.0.2 +). Run:
+
+```shell
+
+# Install Stack
+
+wget -qO- https://get.haskellstack.org/ | sh
+
+# Install Haskell
+
+stack setup --install-ghc
+
+```
+This GHC will not replace former versions.
+
+Warning : Lacking of Stack will cause Emacs fail to respond for seconds.
 
 ## Plug-in List
 
+## Attention
+
+global-git-commit-mode may slows the reative of some operations in some low performance hard disks. You can block up this package in init-git.el.
+
+In init-windows.el, windmove-defualt-keybindings is set to 'control and it is conflicted with paredit. Now you can edit parenthesis with C-<right>, C-<left>, etc.
+
+
+
+
+    
+
+
+
+  

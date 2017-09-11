@@ -72,5 +72,36 @@
         (error "Cannot open tramp file")
       (browse-url (concat "file://" file-name)))))
 
+;; To prevent flymake-mode runs on buffers without a file name
+
+(defvar load-user-customized-major-mode-hook t)
+(defvar cached-normal-file-full-path nil)
+
+
+(defun is-buffer-file-temp ()
+  (interactive)
+  "If (buffer-file-name) is nil or a temp file or HTML file converted from org file"
+  (let ((f (buffer-file-name))
+        org
+        (rlt t))
+    (cond
+     ((not load-user-customized-major-mode-hook) t)
+     ((not f)
+      ;; file does not exist at all
+      (setq rlt t))
+     ((string= f cached-normal-file-full-path)
+      (setq rlt nil))
+     ((string-match (concat "^" temporary-file-directory) f)
+      ;; file is create from temp directory
+      (setq rlt t))
+     ((and (string-match "\.html$" f)
+           (file-exists-p (setq org (replace-regexp-in-string "\.html$" ".org" f))))
+      ;; file is a html file exported from org-mode
+      (setq rlt t))
+     (t
+      (setq cached-normal-file-full-path f)
+      (setq rlt nil)))
+    rlt))
+
 
 (provide 'init-utils)

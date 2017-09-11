@@ -88,8 +88,10 @@ Call a second time to restore the original window configuration."
 
 
 
-(unless (memq window-system '(nt w32))
-  (windmove-default-keybindings 'control))
+;; This will conflict with paredit.
+
+;;(unless (memq window-system '(nt w32))
+;;  (windmove-default-keybindings 'control))
 
 
 (provide 'init-windows)
