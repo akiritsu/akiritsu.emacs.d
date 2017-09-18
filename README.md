@@ -26,7 +26,6 @@
 
 On Construction.
 
-<table>
   <tr>
     <td valign=top>
 	 <table border>
