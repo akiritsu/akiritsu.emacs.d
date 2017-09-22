@@ -6,7 +6,7 @@
 (require-package 'lively)
 
 (setq-default initial-scratch-message
-  (concat ";; They will see,\n;;       we'll fight until eternity.\n;; Come with me,\n;;       we'll stand and fight together.\n;; Through our strength,\n;;       we'll make a better day.\n;; Tomorrow we\n;;       shall never surrender...\n "))
+              (concat ";; 由來泉石潛蛟龍\n;; 不經烽火不現蹤\n;; 風雲豈是蒼天主\n;; 拈作軒冕上九重\n "))
 
 
 

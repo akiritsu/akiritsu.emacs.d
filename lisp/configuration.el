@@ -73,7 +73,7 @@
 
 ;; Debug mode
 ;; (toggle-debug-on-quit)
-(toggle-debug-on-error)
+;; (toggle-debug-on-error)
 
 
 (provide 'configuration)
