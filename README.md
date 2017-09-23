@@ -8,7 +8,7 @@
 
 * Integrated with many useful developing tools (magit, slime, etc.)
 
-* Magical appearence
+* Magical theme the matrix
 
 ## Supported Language
 
