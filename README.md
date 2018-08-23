@@ -22,7 +22,6 @@
 
 * HAML / Markdown / Textile / ERB
 
-<<<<<<< HEAD
 ## Emacs Cheatsheet
 
 
