@@ -110,6 +110,7 @@
 (require 'init-sql)
 (require 'init-proof-general)
 (require 'init-mozart-oz)
+(require 'init-idris)
 
 
 (require 'init-paredit)

@@ -240,7 +240,7 @@
      (fl-comment-face ((t (:foreground "pink"))))
      (fl-doc-string-face ((t (:foreground "#87CEFA"))))
      (fl-function-name-face ((t (:foreground "red"))))
-     (fl-keyword-face ((t (:foreground "cyan")))) ; keyword
+     (fl-keyword-face ((t (:foreground "DarkTurquoise")))) ; keyword
      (fl-string-face ((t (:foreground "green"))))
      (fl-type-face ((t (:foreground "yellow"))))
      (flash-paren-face-off ((t (nil))))
