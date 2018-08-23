@@ -11,7 +11,7 @@
 
 (global-set-key (kbd "C-,") 'origami-recursively-toggle-node)
 
-(global-set-key (kbd "C-M-;") 'comment-box)
+(global-set-key (kbd "C-M-;") 'comment-box) ;
 
 ;;; Character bindings
 
@@ -48,3 +48,4 @@
 (provide 'extra-shortcuts)
 
 ;;; extra-shortcuts.el ends here
+
